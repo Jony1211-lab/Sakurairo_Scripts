@@ -2,7 +2,7 @@
 declare let meting_api: string;
 //@ts-ignore
 import APlayer from 'aplayer'
-import { loadCSS } from 'fg-loadcss';
+import 'aplayer/dist/APlayer.min.css'
 import { registerOnGlobal } from '../common/sakurairo_global';
 export interface APlayerAudio {
     artist: string
@@ -108,13 +108,6 @@ export function pauseAllPlayer() {
 }
 export function aplayerInit() {
     //document.addEventListener('DOMContentLoaded', loadMeting, /* !1 *//**false与什么都不传递作用相等 */);
-    if (_iro.ext_shared_lib) {
-        loadCSS('https://s.nmxc.ltd/aplayer/dist/APlayer.min.css')
-        //loadCSS("https://cdn.jsdelivr.net/gh/Fuukei/APlayer@1.10.2/dist/APlayer.min.css");
-    } else {
-        //@ts-ignore
-        import(  /* webpackMode: "eager" */'aplayer/dist/APlayer.min.css')
-    }
     let meting_api_path: URL
     if (typeof meting_api == 'string') {
         meting_api_path = new URL(meting_api)

@@ -5,7 +5,7 @@
  * @license GPL-v2
  * @date 2021.3.21
  * Github Repository:
- * @url https://github.com/Fuukei/Sakurairo_Scripts
+ * @url https://github.com/Jony1211-lab/Sakurairo_Scripts
  * @url https://github.com/mirai-mamori/Sakurairo/blob/f7db3c5c73d70a6a3f845844a44f279d540a7b6c/js/sakura-app.js
  * 
  * *** ACKNOWLEDGEMENT *** 
